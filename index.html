@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apex Solutions — Painting • Repairs • Property Prep</title>
+  <meta name="description" content="Apex Solutions delivers premium painting, honest repairs, and property prep for fast, clean results." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/mark.svg">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <img src="assets/mark.svg" alt="" class="mark" />
+        <div class="brand-text">
+          <div class="name">Apex Solutions</div>
+          <div class="tag">Painting • Repairs • Property Prep</div>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="btn small">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1>Clean lines. Solid fixes. Fast turnarounds.</h1>
+          <p>Interior & exterior painting, drywall repair, carpentry, and investor‑ready make‑readies. We show up on time and leave it tidy.</p>
+          <div class="cta-row">
+            <a href="#contact" class="btn primary">Start a free estimate</a>
+            <a href="#services" class="btn ghost">See services</a>
+          </div>
+          <ul class="badges">
+            <li>Licensed & Insured</li>
+            <li>Budget‑honest bids</li>
+            <li>Before/after photo updates</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <img src="assets/hero.jpg" alt="Freshly painted living room" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="wrap">
+        <h2 class="section-title">What we do</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Precision Painting</h3>
+            <p>Interior • Exterior • Drywall repair • Trim & lacquer • Stain • Cabinet refinishing • Color matching</p>
+          </article>
+          <article class="card">
+            <h3>Repairs that Last</h3>
+            <p>Carpentry • Patching & texture • Caulk & seal • Fixture/hardware swaps • Small exterior repairs</p>
+          </article>
+          <article class="card">
+            <h3>Property Prep / Make‑Ready</h3>
+            <p>Investor punch‑lists • Rent‑ready turns • Pressure washing • Minor landscaping • Haul‑away</p>
+          </article>
+        </div>
+        <p class="muted note">Service area: Your City & nearby. Need something off this list? <a href="#contact">Ask us</a>.</p>
+      </div>
+    </section>
+
+    <section id="gallery" class="section alt">
+      <div class="wrap">
+        <h2 class="section-title">Recent work</h2>
+        <div class="gallery">
+          <img src="assets/g1.jpg" alt="Before/after wall repair" />
+          <img src="assets/g2.jpg" alt="Exterior paint refresh" />
+          <img src="assets/g3.jpg" alt="Trim & door update" />
+          <img src="assets/g4.jpg" alt="Cabinet refinishing" />
+          <img src="assets/g5.jpg" alt="Living room repaint" />
+          <img src="assets/g6.jpg" alt="Investor make‑ready" />
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="wrap">
+        <h2 class="section-title">How it works</h2>
+        <ol class="steps">
+          <li><span>1</span>Tell us about the property—photos, scope, timing.</li>
+          <li><span>2</span>We quote fast and schedule a walkthrough if needed.</li>
+          <li><span>3</span>We do the work, keep it tidy, send progress pics.</li>
+          <li><span>4</span>Final walkthrough. You sign off. We clean up.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="wrap">
+        <h2 class="section-title">Get your free estimate</h2>
+        <form id="quoteForm" class="form">
+          <div class="two">
+            <label>Full name
+              <input name="name" required placeholder="Your name" />
+            </label>
+            <label>Phone
+              <input name="phone" required placeholder="(###) ###‑####" />
+            </label>
+          </div>
+          <label>Email
+            <input type="email" name="email" placeholder="you@example.com" />
+          </label>
+          <label>Property address
+            <input name="address" placeholder="Street, City, State" />
+          </label>
+          <label>Scope / notes
+            <textarea name="notes" rows="5" placeholder="Rooms, colors, damage, timing…"></textarea>
+          </label>
+          <button class="btn primary" type="submit">Request estimate</button>
+          <p class="form-note">We respond same day whenever possible.</p>
+          <p id="status" class="status" aria-live="polite"></p>
+        </form>
+        <div class="contact-bites">
+          <div>Prefer text? <a href="sms:+15555550123">+1 (555) 555‑0123</a></div>
+          <div>Email: <a href="mailto:hello@apexstrokes.com">hello@apexstrokes.com</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <div>© <span id="y"></span> Apex Solutions. All rights reserved.</div>
+      <div class="foot-links">
+        <a href="#" onclick="alert('Coming soon')">License & Insurance</a>
+        <a href="#" onclick="alert('Coming soon')">Terms</a>
+        <a href="#" onclick="alert('Coming soon')">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

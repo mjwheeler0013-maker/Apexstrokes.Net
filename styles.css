@@ -1,0 +1,71 @@
+:root{
+  --bg:#0b0c0e; --panel:#121418; --ink:#eaeef3; --muted:#aeb7c6;
+  --brand:#21c37d; --accent:#8af0c7; --line:#232631;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;color:var(--ink);background:var(--bg)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+a{color:var(--accent)}
+/* Header */
+.site-header{position:sticky;top:0;background:rgba(11,12,14,0.72);backdrop-filter:saturate(130%) blur(10px);border-bottom:1px solid var(--line);z-index:40}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--ink)}
+.mark{width:40px;height:40px}
+.name{font-weight:800;letter-spacing:.2px}
+.tag{font-size:12px;color:var(--muted)}
+.nav a{color:var(--ink);text-decoration:none;margin-left:14px;opacity:.9}
+.nav a:hover{opacity:1}
+.btn{border:1px solid var(--line);padding:10px 14px;border-radius:12px;text-decoration:none;color:var(--ink);display:inline-block}
+.btn.small{padding:8px 12px;border-radius:10px}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:#0b0c0e;font-weight:700}
+.btn.ghost{background:transparent}
+/* Hero */
+.hero{border-bottom:1px solid var(--line);background:linear-gradient(180deg, rgba(33,195,125,0.08), transparent 45%)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;padding:36px 0}
+.hero-copy h1{font-size:44px;line-height:1.06;margin:16px 0}
+.hero-copy p{color:var(--muted);font-size:18px}
+.cta-row{display:flex;gap:12px;margin-top:14px}
+.badges{display:flex;gap:12px;list-style:none;padding:0;margin:16px 0 0 0;color:var(--muted);flex-wrap:wrap}
+.hero-card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:8px}
+.hero-img{width:100%;border-radius:14px;display:block}
+/* Sections */
+.section{padding:56px 0;border-bottom:1px solid var(--line)}
+.section.alt{background:#0f1216}
+.section-title{font-size:28px;margin:0 0 20px 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px}
+.muted{color:var(--muted)}
+.note{margin-top:10px}
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.gallery img{width:100%;height:180px;object-fit:cover;border-radius:12px;border:1px solid var(--line);background:#0b0d10}
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;list-style:none;padding:0;margin:0}
+.steps li{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;color:var(--ink);display:flex;align-items:center}
+.steps li span{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--brand);color:#04120a;font-weight:800;margin-right:8px}
+/* Form */
+.form{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px}
+.form .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:grid;gap:6px;margin:8px 0}
+input,textarea{background:#0b0d11;border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--ink);font-size:15px;outline:none}
+input::placeholder,textarea::placeholder{color:#748097}
+.form-note{color:var(--muted);font-size:13px;margin-top:8px}
+.status{margin-top:10px;font-size:14px}
+.contact-bites{margin-top:16px;color:var(--muted);display:flex;gap:16px;flex-wrap:wrap}
+/* Footer */
+.site-footer{padding:24px 0}
+.foot{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:14px}
+.foot a{color:var(--muted);text-decoration:none}
+.foot a:hover{color:var(--ink)}
+/* Responsive */
+@media (max-width: 980px){
+  .hero-grid{grid-template-columns:1fr;gap:16px}
+  .cards{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .form .two{grid-template-columns:1fr}
+}
+@media (max-width: 600px){
+  .gallery{grid-template-columns:1fr}
+  .hero-copy h1{font-size:34px}
+}
